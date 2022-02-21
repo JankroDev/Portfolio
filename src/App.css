@@ -1,14 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 .languageCard {
+  
   max-width: 30vw;
   max-height: 30vh;
-  padding: 30px;
-  border-width: 2px;
-  border-radius: 70px;
-  align-content: center;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
 }
+
+.languageCard:hover {
+  background-color: lightslategray;
+}
+
+.languageCardName{
+  visibility: hidden;
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Permanent Marker' ;
+  align-self: center;
+  pointer-events: none;
+}
+
+.languageCard:hover .languageCardName {
+  visibility: visible;
+  transition: all .4s ease-in-out; 
+  transform: scale(1.1); 
+}
+
+.languageCardImage{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.languageCardImage:hover{
+  filter: grayscale(75%) brightness(3%) blur(4px);
+}
+
+
 
 .languageCardWrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  padding-top: 30px;
+  padding-bottom: 30px;
   gap: 10px;
+  
 }
+
+
+
+.divider{
+  text-align: center;
+  height: 10vh;
+  transform:
+    perspective(75em)
+    rotateX(18deg);
+  box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color:
+    rgb(213, 220, 226)
+    rgb(213, 220, 226)
+    rgb(184, 194, 204);
+  }
+
+.dividerTextProduction{
+  font-size:36px;
+  font-family: 'Fredoka One';
+  padding-top: 10px;
+}
+.dividerTextProjects{
+  font-size:36px;
+  font-family: 'Indie Flower';
+  padding-top: 10px;
+}
+
+.projectInputImage:hover{
+  filter: blur(4px);
+  transition: all .4s ease-in-out; 
+  transform: scale(1.1); 
+}
+
+.projectInputImage:hover .projectImageText {
+  visibility: visible;
+  transition: all .4s ease-in-out; 
+  transform: scale(1.1); 
+}
+
+.projectImageText{
+  padding:10px;
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
+  font-family: 'Permanent Marker' ;
+  align-self: center;
+  pointer-events: none;
+}
+
+
+
+

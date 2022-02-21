@@ -9,7 +9,6 @@ import {
   Git,
   Java,
   JQuery,
-  JSON,
   Kotlin,
   MySQL,
   Python,
@@ -22,13 +21,14 @@ import {
 import "./App.css";
 
 export function Languages() {
+  
   const productionLanguages = [
     {
       name: "React",
       source: ReactImage,
     },
     {
-      name: "Java Script, HTML, CSS",
+      name: "Web",
       source: Web,
     },
     {
@@ -44,7 +44,7 @@ export function Languages() {
       source: Git,
     },
     {
-      name: "Bootstrap",
+      name: "B/S",
       source: Bootstrap,
     },
     {
@@ -63,41 +63,61 @@ export function Languages() {
       name: "XML",
       source: XML,
     },
-    {
-      name: "JSON",
-      source: JSON,
-    },
+    
   ];
 
   const projectLanguages = [
     {
       name: "Kotlin",
-      source: { Kotlin },
+      source: Kotlin,
     },
     {
-      name: "TypeScript",
-      source: { TypeScript },
+      name: "Type Script",
+      source: TypeScript,
     },
     {
       name: "Android",
-      source: { Android },
+      source: Android,
     },
     {
       name: "MySQL",
-      source: { MySQL },
+      source: MySQL,
     },
     {
       name: "Babel",
-      source: { Babel },
+      source: Babel,
     },
   ];
 
   const productionLanguageViews = productionLanguages.map((language) => {
     return (
       <Card className="languageCard">
-        <Card.Img src={language.source}></Card.Img>
+        <Card.Img className="languageCardImage" src={language.source}></Card.Img>
+        <Card.Text className="languageCardName" >{language.name}</Card.Text>
       </Card>
     );
   });
-  return <div className="languageCardWrapper">{productionLanguageViews}</div>;
+
+  const projectLanguageViews = projectLanguages.map((language) => {
+    return (
+      <Card className="languageCard">
+        <Card.Img className="languageCardImage" src={language.source}></Card.Img>
+        <Card.Text className="languageCardName" >{language.name}</Card.Text>
+      </Card>
+    );
+  });
+
+  return (
+  <div>
+    <div className="divider">
+    <label className="dividerTextProduction">In Production Technologies Used</label>
+    </div>
+    <div className="languageCardWrapper">{productionLanguageViews}</div>
+    <div className="divider">
+    <label className="dividerTextProjects">Self projects completed in</label>
+    </div>
+    <div className="languageCardWrapper">{projectLanguageViews}</div>
+  </div>
+  
+  );
 }
