@@ -99,7 +99,11 @@ export function ACIOEMProject() {
         </Card.Text>
         <Card.Header style={{fontWeight:"bold", fontSize: '20px'}}>The Solution</Card.Header>
         <Card.Text style={{padding:"20px"}}>
-         SOLUTION HERE 
+         The site allows all of the sales team to access every invoice on the object of their inquiry, spanning 
+         all of their databases to get the latest and most updated information. This project was a M-V-C format, 
+         as it seemed the most reasonable for all the backend work that needed to be done to serve the information
+         up the the view. The Sales team could now all be on the same page on both price and profit margins. This 
+         also took their average quote time down from a couple days, to a couple of hours. 
         </Card.Text>
         <Card.Header style={{textAlign:"center"}}>
           <a href='https://aciservices.com/' target='_blank'> ACI Services Website</a>
