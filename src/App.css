@@ -100,3 +100,8 @@
   align-self: center;
   pointer-events: none;
 }
+
+.sideSpace {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}

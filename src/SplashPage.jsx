@@ -4,7 +4,7 @@ import { Projects } from "./Projects";
 
 export function SplashPage() {
   return (
-    <div style={{ paddingLeft: "5vh", paddingRight: "5vh" }}>
+    <div className="sideSpace">
       <Projects />
       <Languages />
     </div>
