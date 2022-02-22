@@ -7,17 +7,17 @@ import { useNavigate } from "react-router-dom";
 export function Projects() {
   let navigate = useNavigate();
 
-  const napaClickHandler = () =>{
-    navigate('/napaProject')
-  }
+  const napaClickHandler = () => {
+    navigate("/napaProject");
+  };
 
-  const aciTagClickHandler = () =>{
-    navigate('/aciProject')
-  }
+  const aciTagClickHandler = () => {
+    navigate("/aciProject");
+  };
 
-  const aciOemClickHandler = () =>{
-    navigate('aciOemProject')
-  }
+  const aciOemClickHandler = () => {
+    navigate("aciOemProject");
+  };
 
   return (
     <div>
@@ -35,14 +35,12 @@ export function Projects() {
       >
         <input
           className="projectInputImage"
-          style={{ height: "40vh", width: "25vw", objectFit: "cover" }}
           type="image"
           onClick={napaClickHandler}
           src={NapaProjectImage}
         ></input>
         <input
           className="projectInputImage"
-          style={{ height: "40vh", width: "25vw", objectFit: "cover" }}
           type="image"
           onClick={aciTagClickHandler}
           src={ACIProjectImage}
@@ -50,9 +48,6 @@ export function Projects() {
         <input
           className="projectInputImage"
           style={{
-            height: "40vh",
-            width: "25vw",
-            objectFit: "cover",
             objectPosition: -150,
           }}
           type="image"

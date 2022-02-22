@@ -71,6 +71,14 @@
   padding-top: 10px;
 }
 
+.projectInputImage {
+  box-shadow: 5px 10px #e1e5eb;
+  border-radius: 10%;
+  height: 40vh;
+  width: 25vw;
+  object-fit: cover;
+}
+
 .projectInputImage:hover {
   filter: blur(4px);
   transition: all 0.4s ease-in-out;
