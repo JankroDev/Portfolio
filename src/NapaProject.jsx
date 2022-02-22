@@ -3,8 +3,13 @@ import LoginImage from "./images/project-images/Napa Invoices Login.png";
 import InvoicesScreenImage from "./images/project-images/Invoices Screen.png";
 import EntryScreen from "./images/project-images/Entry Screen.png";
 import { Card } from "react-bootstrap";
+import BackArrowImage from "./images/buttonresources/backarrow.png"
+import { useNavigate } from "react-router-dom";
 
 export function NapaProject() {
+  
+  let navigate = useNavigate();
+
   const imageHolder = {
     maxWidth: "90vw",
     display: "block",
@@ -13,8 +18,13 @@ export function NapaProject() {
     marginRight: "auto",
   };
 
+  const backClickHandler = () => {
+    navigate("/");
+  }
+
   return (
     <div className="sideSpace">
+      <input type="image" className="backButton" src={BackArrowImage} onClick={backClickHandler}></input>
       <div className="divider">
         <label className="dividerTextProduction">
           TL:DR (More Technical info below)
@@ -40,9 +50,9 @@ export function NapaProject() {
       <div className="divider">
         <label className="dividerTextProduction">The in's and out's</label>
       </div>
-      <Card>
-        <Card.Header>The Problem</Card.Header>
-        <Card.Text>
+      <Card style={{paddingBottom:'5vh'}}>
+        <Card.Header style={{fontWeight:"bold" , fontSize: '20px'}}>The Problem</Card.Header>
+        <Card.Text style={{padding:"20px"}}>
           Napa Auto Parts stores use a program "Tams II" for all of the services
           they currently do for the customer. This includes part look up,
           invoicing, ROA's for accounts, and inventory. Tams doesn't offer any
@@ -59,8 +69,8 @@ export function NapaProject() {
           the fields for each invoice sometimes 20-60 different fields, a better
           solution had to be implemented.
         </Card.Text>
-        <Card.Header>The Solution</Card.Header>
-        <Card.Text>
+        <Card.Header style={{fontWeight:"bold", fontSize: '20px'}}>The Solution</Card.Header>
+        <Card.Text style={{padding:"20px"}}>
           What if the Manager could, at the end of the week, scan every invoice
           for that account, then run one script that would prepare all of the
           files for upload. No extra work for the manager other than selecting
@@ -81,11 +91,12 @@ export function NapaProject() {
           download the invoice. On viewing the invoice the download URL is sent
           to the browser so they can view the invoice in more detail.
         </Card.Text>
-        <Card.Header>
-          <a href="https://github.com/JankroDev/NapaInvoices/tree/master/NapaInvoices">
+        <Card.Header style={{display:"grid", gridTemplateColumns: "2fr 1fr 1fr", fontSize: "18px", fontWeight:"bold"}}>
+          <a href="https://github.com/JankroDev/NapaInvoices/tree/master/NapaInvoices" target="_blank">
             The public repo of the site
           </a>
-          <a href="https://eliteinvoices.netlify.app/login">The site</a>
+          <a href="https://eliteinvoices.netlify.app" target="_blank">The site</a>
+          <a href="https://github.com/JankroDev/PythonSriptInvoiceInfo" target="_blank">The Python</a>
         </Card.Header>
       </Card>
     </div>
