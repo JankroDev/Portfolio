@@ -14,6 +14,7 @@ import SQL from "../images/icons/SQL.png";
 import TypeScript from "../images/icons/typescript.png";
 import Web from "../images/icons/web.png";
 import XML from "../images/icons/xml.png";
+import Firebase from "../images/icons/firebase.png"
 
 export {
   Android,
@@ -32,4 +33,5 @@ export {
   TypeScript,
   Web,
   XML,
+  Firebase
 };

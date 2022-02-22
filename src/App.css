@@ -49,6 +49,19 @@
   gap: 10px;
 }
 
+
+.contactCardWrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.cardHeader{
+  background-color: #98999c;
+}
+
 .divider {
   margin-top: 3vh;
   text-align: center;
@@ -58,7 +71,7 @@
     rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
   border-radius: 10px;
   border: 1px solid;
-  border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
+  border-color: rgb(158, 167, 175) rgb(213, 220, 226) rgb(184, 194, 204);
 }
 
 .dividerTextProduction {
@@ -113,3 +126,21 @@
   margin: 20px;
 }
 
+
+.backgroundImage {
+  background: url("./images/background/bluewoodbackground.jpg") repeat-x;
+  position: fixed;
+  left: 1px;
+  height: 1440px;
+  width: 2560px;
+  animation: slide 200s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-2560px); /* The image width */
+  }
+}
