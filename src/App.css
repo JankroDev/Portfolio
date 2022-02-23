@@ -49,8 +49,7 @@
   gap: 10px;
 }
 
-
-.contactCardWrapper{
+.contactCardWrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 30px;
@@ -58,7 +57,7 @@
   gap: 10px;
 }
 
-.cardHeader{
+.cardHeader {
   background-color: #98999c;
 }
 
@@ -80,7 +79,8 @@
   padding-top: 10px;
 }
 .dividerTextProjects {
-  font-size: 36px;
+  font-size: 48px;
+  font-weight: bold;
   font-family: "Indie Flower";
   padding-top: 10px;
 }
@@ -120,12 +120,11 @@
   padding-right: 4vw;
 }
 
-.backButton{
+.backButton {
   width: 80px;
-  height:60px;
+  height: 60px;
   margin: 20px;
 }
-
 
 .backgroundImage {
   background: url("./images/background/bluewoodbackground.jpg") repeat-x;

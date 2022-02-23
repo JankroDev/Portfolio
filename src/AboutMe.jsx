@@ -4,42 +4,80 @@ import NapaLogo from "./images/companylogos/napalogo.png";
 import ACILogo from "./images/companylogos/aciLogo.png";
 
 export function AboutMe() {
-
   const companyLogoStyle = {
     width: "10vw",
-    height: "10vh"
-  }
+    height: "10vh",
+  };
 
   return (
     <div>
-      <div style={{marginBottom: "3vh"}} className="divider">
+      <div style={{ marginBottom: "3vh" }} className="divider">
         <label className="dividerTextProjects">About Me</label>
       </div>
-      <Card >
-        <Card.Header style={{fontSize:"20px",fontWeight:"bold"}}>Experience</Card.Header>
+      <Card>
+        <Card.Header style={{ fontSize: "20px", fontWeight: "bold" }}>
+          Experience
+        </Card.Header>
         <Card.Text style={{ padding: "20px" }}>
           My name is <b>Chris Janke</b> nice to meet you! I have been
           coding/programming for around 5 Years now, and for the past 3 years I
           have taken it to the next level by doing projects for the companies in
           my area. Two of the projects were in a team enviroment. I worked in
           tandum with another developer/designer all while also being under
-          supervision from another senior developer. All of the code was done by me, the other 
-          developers were there to make requests/revisions. I currently have 3 projects
-          out and into production (Completed/Sold) for my clients. Thanks for
-          stopping by and checking me out!
+          supervision from another senior developer. All of the code was done by
+          me, the other developers were there to make requests/revisions. I
+          currently have 3 projects out and into production (Completed/Sold) for
+          my clients. Thanks for stopping by and checking me out!
         </Card.Text>
-        <Card.Text style={{ padding: "20px", fontWeight:"bold" }}>
+        <Card.Text style={{ padding: "20px", fontWeight: "bold" }}>
           Companies I have completed Projects for
         </Card.Text>
-        <div style={{paddingLeft:"10vw", display:"grid", gridTemplateColumns:"2fr 1fr"}}>
-          <img style={{width:"30vw", height:"11vh"}} src={ACILogo} alt=''></img>
-          <img style={{width:"14vw", height:"14vh"}} src={NapaLogo} alt=''></img>
+        <div
+          style={{
+            paddingLeft: "10vw",
+            display: "grid",
+            gridTemplateColumns: "2fr 1fr",
+          }}
+        >
+          <img
+            style={{ width: "70%", height: "70%" }}
+            src={ACILogo}
+            alt=""
+          ></img>
+          <img
+            style={{ width: "75%", height: "90%" }}
+            src={NapaLogo}
+            alt=""
+          ></img>
         </div>
-        <label style={{ textAlign:"center", fontWeight:"bold", fontSize:"18px"}}> This site was also made by me in react!</label>
-        <a style={{ textAlign:"center", padding: "20px", fontSize:"20px", fontWeight:"bold" }} href="https://github.com/JankroDev/Portfolio" target="_blank">This sites Repo</a>
-        <Card.Header style={{fontSize:"20px",fontWeight:"bold"}}>How I learned programming</Card.Header>
+        <label
+          style={{ textAlign: "center", fontWeight: "bold", fontSize: "18px" }}
+        >
+          {" "}
+          This site was also made by me in React!
+        </label>
+        <a
+          style={{
+            textAlign: "center",
+            padding: "20px",
+            fontSize: "20px",
+            fontWeight: "bold",
+          }}
+          href="https://github.com/JankroDev/Portfolio"
+          target="_blank"
+        >
+          This sites Repo
+        </a>
+        <Card.Header style={{ fontSize: "20px", fontWeight: "bold" }}>
+          How I learned programming
+        </Card.Header>
         <Card.Text style={{ padding: "20px" }}>
-          <a style={{fontWeight:"bold" , fontSize:"18px"}} href="https://teamtreehouse.com/" target="_blank" rel="noreferrer">
+          <a
+            style={{ fontWeight: "bold", fontSize: "18px" }}
+            href="https://teamtreehouse.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Treehouse
           </a>
           <br></br>I studied with Treehouse vigorously for 2 Years, completing
@@ -47,7 +85,11 @@ export function AboutMe() {
           had any freetime it was spent here, learning more coding.<br></br>
         </Card.Text>
         <Card.Text style={{ padding: "20px" }}>
-          <a style={{fontWeight:"bold", fontSize:"18px"}} href="https://www.freecodecamp.org/" target="_blank">
+          <a
+            style={{ fontWeight: "bold", fontSize: "18px" }}
+            href="https://www.freecodecamp.org/"
+            target="_blank"
+          >
             Free Code Camp
           </a>
           <br></br>
@@ -56,7 +98,11 @@ export function AboutMe() {
         </Card.Text>
 
         <Card.Text style={{ padding: "20px" }}>
-          <a style={{fontWeight:"bold", fontSize:"18px"}} href="https://www.udemy.com/" target="_blank">
+          <a
+            style={{ fontWeight: "bold", fontSize: "18px" }}
+            href="https://www.udemy.com/"
+            target="_blank"
+          >
             Udemy
           </a>
           <br></br>
