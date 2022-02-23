@@ -22,16 +22,12 @@ export function Projects() {
   return (
     <div>
       <div className="divider">
-        <label className="dividerTextProduction">
+        <label className="">
           Projects in Production (Sold)
         </label>
       </div>
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
-          padding: "30px",
-        }}
+        className="projectsWrapper"
       >
         <input
           className="projectInputImage"

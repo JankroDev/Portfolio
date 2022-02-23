@@ -74,17 +74,22 @@
 }
 
 .dividerTextProduction {
-  font-size: 36px;
+  font-size: 3vmax;
   font-family: "Fredoka One";
   padding-top: 10px;
 }
 .dividerTextProjects {
-  font-size: 48px;
+  font-size: 3vmax;
   font-weight: bold;
   font-family: "Indie Flower";
   padding-top: 10px;
 }
 
+.projectsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30,
+}
 .projectInputImage {
   box-shadow: 5px 10px #e1e5eb;
   border-radius: 10%;
@@ -143,3 +148,34 @@
     transform: translate(-2560px); /* The image width */
   }
 }
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .projectsWrapper {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 10vw;
+    margin-bottom: auto;
+  }
+
+  .projectInputImage {
+    box-shadow: 5px 10px #e1e5eb;
+    border-radius: 10%;
+    height: 40vh;
+    width: 70vw;
+    object-fit: cover;
+  }
+
+  .projectImageText{
+    visibility: hidden;
+    
+  }
+
+  .languageCardName{
+    font-size: 3vw;
+  }
+}
+
