@@ -1,9 +1,17 @@
 <script setup lang="ts">
-import { profile } from '../content/profile'
+import HeroSection from '../components/HeroSection.vue'
+import ProjectGrid from '../components/ProjectGrid.vue'
+import ExperienceTimeline from '../components/ExperienceTimeline.vue'
+import SkillGroups from '../components/SkillGroups.vue'
+import AboutSection from '../components/AboutSection.vue'
+import ContactSection from '../components/ContactSection.vue'
 </script>
 
 <template>
-  <div class="container">
-    <h1>{{ profile.headline }}</h1>
-  </div>
+  <HeroSection />
+  <ProjectGrid />
+  <ExperienceTimeline />
+  <SkillGroups />
+  <AboutSection />
+  <ContactSection />
 </template>
