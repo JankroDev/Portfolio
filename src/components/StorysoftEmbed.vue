@@ -75,7 +75,7 @@ onBeforeUnmount(() => {
   <div class="embed">
     <template v-if="failed">
       <img v-if="fallback" :src="fallback.src" :alt="fallback.alt" />
-      <p class="embed__note">The live StorySoft embed could not load here, so this is a screenshot instead.</p>
+      <p class="embed__note">The live Storysoft embed could not load here, so this is a screenshot instead.</p>
     </template>
     <component :is="`storysoft-${embed.kind}`" v-else v-bind="embed.attrs" />
   </div>

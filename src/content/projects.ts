@@ -14,7 +14,7 @@ export const projects: Project[] = [
     slug: 'story-builder',
     title: 'Story Builder',
     summary: 'Drag-and-drop editor agencies use to design responsive pharma ads without a developer.',
-    employer: 'StorySoft',
+    employer: 'Storysoft',
     role: 'Full Stack Developer',
     year: '2022–present',
     stack: ['Vue 3', 'TypeScript', '.NET / C#', 'MongoDB', 'Lottie', 'AWS'],
@@ -39,17 +39,17 @@ export const projects: Project[] = [
       {
         heading: 'Outcome',
         paragraphs: [
-          'Agencies design and revise Stories without waiting on engineering, and every Story ships with analytics wired in. The Builder is the front door to the StorySoft platform used by pharma brands and their agencies.',
+          'Agencies design and revise Stories without waiting on engineering, and every Story ships with analytics wired in. The Builder is the front door to the Storysoft platform used by pharma brands and their agencies.',
         ],
       },
     ],
-    links: [{ label: 'StorySoft platform', href: 'https://www.storysoft.io/' }],
+    links: [{ label: 'Storysoft platform', href: 'https://www.storysoft.io/' }],
   },
   {
     slug: 'webframe',
     title: 'Webframe',
     summary: 'Config-driven custom element that turns any client page into a filterable gallery of Stories.',
-    employer: 'StorySoft',
+    employer: 'Storysoft',
     role: 'Full Stack Developer',
     year: '2022–present',
     stack: ['Vue 3', 'TypeScript', 'Web Components', '.NET / C#', 'Google Analytics'],
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     slug: 'player',
     title: 'Player',
     summary: 'Embeddable custom element that runs a Story in-frame with analytics, sharing, and compliance UI.',
-    employer: 'StorySoft',
+    employer: 'Storysoft',
     role: 'Full Stack Developer',
     year: '2022–present',
     stack: ['Vue 3', 'TypeScript', 'Web Components', 'Google Analytics'],
@@ -127,7 +127,7 @@ export const projects: Project[] = [
       {
         heading: 'Outcome',
         paragraphs: [
-          'One runtime serves every distribution channel StorySoft offers, and every play is tracked. The Story below is a live Player embed of a public demo.',
+          'One runtime serves every distribution channel Storysoft offers, and every play is tracked. The Story below is a live Player embed of a public demo.',
         ],
       },
     ],

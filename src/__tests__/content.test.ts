@@ -16,8 +16,8 @@ describe('profile', () => {
 })
 
 describe('experience', () => {
-  it('lists StorySoft first as current', () => {
-    expect(experience[0].company).toBe('StorySoft LLC')
+  it('lists Storysoft first as current', () => {
+    expect(experience[0].company).toBe('Storysoft LLC')
     expect(experience[0].end).toBe('Present')
   })
 

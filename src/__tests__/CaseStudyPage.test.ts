@@ -33,7 +33,7 @@ describe('CaseStudyPage', () => {
     }
   })
 
-  it('renders the live embed for StorySoft projects', async () => {
+  it('renders the live embed for Storysoft projects', async () => {
     const { wrapper } = await mountCase('webframe')
     expect(wrapper.find('storysoft-webframe').exists()).toBe(true)
   })

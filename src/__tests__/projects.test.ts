@@ -25,7 +25,7 @@ describe('projects', () => {
     }
   })
 
-  it('StorySoft embeds use the public custom elements', () => {
+  it('Storysoft embeds use the public custom elements', () => {
     expect(getProject('webframe')?.embed?.kind).toBe('webframe')
     expect(getProject('player')?.embed?.kind).toBe('player')
     expect(getProject('story-builder')?.embed).toBeUndefined()

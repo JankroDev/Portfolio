@@ -3,7 +3,7 @@ import { computed, watchEffect } from 'vue'
 import { useRouter } from 'vue-router'
 import { getProject, getAdjacent } from '../content/projects'
 import StackTags from '../components/StackTags.vue'
-import StorySoftEmbed from '../components/StorySoftEmbed.vue'
+import StorysoftEmbed from '../components/StorysoftEmbed.vue'
 
 const props = defineProps<{ slug: string }>()
 const router = useRouter()
@@ -35,7 +35,7 @@ watchEffect(() => {
         </dl>
       </header>
 
-      <StorySoftEmbed v-if="project.embed" :embed="project.embed" :fallback="project.images[0]" class="case__embed" />
+      <StorysoftEmbed v-if="project.embed" :embed="project.embed" :fallback="project.images[0]" class="case__embed" />
 
       <div v-if="project.images.length" class="gallery">
         <figure v-for="img in project.images" :key="img.src">
