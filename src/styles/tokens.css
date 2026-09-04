@@ -1,0 +1,37 @@
+:root {
+  --bg: #0b1220;
+  --bg-elevated: #121b2e;
+  --text: #e6edf7;
+  --text-muted: #9aa8bf;
+  --accent: #4da3ff;
+  --accent-soft: #1a2a4a;
+  --border: #1f2c48;
+
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2.5rem;
+  --space-7: 3.5rem;
+  --space-8: 6rem;
+
+  --radius: 8px;
+  --radius-lg: 14px;
+  --content-max: 72rem;
+  --measure: 40rem;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration: 180ms;
+
+  --step--1: 0.875rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+  --step-3: clamp(2.25rem, 1.5rem + 3vw, 3.25rem);
+  --step-4: clamp(2.75rem, 1.5rem + 5.5vw, 5rem);
+}
