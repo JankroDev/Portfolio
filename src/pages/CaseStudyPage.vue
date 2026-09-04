@@ -12,7 +12,11 @@ const project = computed(() => getProject(props.slug))
 const adjacent = computed(() => getAdjacent(props.slug))
 
 watchEffect(() => {
-  if (!project.value) router.replace('/')
+  if (!project.value) {
+    router.replace('/')
+    return
+  }
+  document.title = `${project.value.title} · Chris Janke`
 })
 </script>
 

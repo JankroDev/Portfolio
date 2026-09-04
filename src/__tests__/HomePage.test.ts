@@ -24,6 +24,7 @@ describe('HomePage', () => {
     const wrapper = await mountHome()
     expect(wrapper.text()).toContain('Full Stack Developer')
     expect(wrapper.text()).not.toMatch(/\bJr\b/)
+    expect(document.title).toBe('Chris Janke · Full Stack Developer')
   })
 
   it('renders every project card and every experience entry', async () => {

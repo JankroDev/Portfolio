@@ -3,7 +3,7 @@ import { mount } from '@vue/test-utils'
 import { createMemoryHistory } from 'vue-router'
 import { createAppRouter } from '../router'
 import CaseStudyPage from '../pages/CaseStudyPage.vue'
-import { projects } from '../content/projects'
+import { getAdjacent, projects } from '../content/projects'
 
 async function mountCase(slug: string) {
   const router = createAppRouter(createMemoryHistory())
@@ -21,12 +21,16 @@ describe('CaseStudyPage', () => {
     expect(wrapper.text()).toContain('NAPA Auto Parts')
     expect(wrapper.findAll('h2').slice(0, 3).map((h) => h.text())).toEqual(['Problem', 'What I built', 'Outcome'])
     expect(wrapper.findAll('.gallery img')).toHaveLength(3)
+    expect(document.title).toBe('NAPA Invoices · Chris Janke')
   })
 
   it('shows prev/next links that wrap around', async () => {
-    const { wrapper } = await mountCase(projects[0]!.slug)
-    expect(wrapper.find('a.pager__prev').attributes('href')).toBe(`/work/${projects[projects.length - 1]!.slug}`)
-    expect(wrapper.find('a.pager__next').attributes('href')).toBe(`/work/${projects[1]!.slug}`)
+    for (const project of [projects[0]!, projects[3]!, projects[projects.length - 1]!]) {
+      const { wrapper } = await mountCase(project.slug)
+      const adjacent = getAdjacent(project.slug)!
+      expect(wrapper.find('a.pager__prev').attributes('href')).toBe(`/work/${adjacent.prev.slug}`)
+      expect(wrapper.find('a.pager__next').attributes('href')).toBe(`/work/${adjacent.next.slug}`)
+    }
   })
 
   it('renders the live embed for StorySoft projects', async () => {
