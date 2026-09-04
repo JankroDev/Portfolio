@@ -10,13 +10,19 @@ import ContactSection from '../components/ContactSection.vue'
 onMounted(() => {
   document.title = 'Chris Janke · Full Stack Developer'
 })
+
+// The template must have exactly one root element (no leading comment, no sibling
+// sections): App.vue wraps routes in <Transition mode="out-in">, which cannot animate
+// a fragment, and a stuck leave would leave the next page blank.
 </script>
 
 <template>
-  <HeroSection />
-  <ProjectGrid />
-  <ExperienceTimeline />
-  <SkillGroups />
-  <AboutSection />
-  <ContactSection />
+  <div class="home">
+    <HeroSection />
+    <ProjectGrid />
+    <ExperienceTimeline />
+    <SkillGroups />
+    <AboutSection />
+    <ContactSection />
+  </div>
 </template>
