@@ -96,4 +96,11 @@ onBeforeUnmount(() => {
   color: var(--text-muted);
   margin: var(--space-3) 0 0;
 }
+
+/* The player custom element has no intrinsic size of its own; it sizes from
+   its host's height. Setting the ratio here (instead of in the content model's
+   embed.attrs.style) keeps that layout concern out of src/content/projects.ts. */
+.embed :deep(storysoft-player) {
+  aspect-ratio: 9 / 16;
+}
 </style>
