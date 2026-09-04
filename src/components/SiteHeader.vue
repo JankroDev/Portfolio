@@ -48,6 +48,7 @@ const nav = [
   font-family: var(--font-display);
   font-size: var(--step-1);
   color: var(--text);
+  white-space: nowrap;
 }
 
 .header__name:hover {

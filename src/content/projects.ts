@@ -107,7 +107,7 @@ export const projects: Project[] = [
         'preserve-ratio': 'true',
         source: 'https://demos.storysoft.io/nuulife/?campaign=sitewf',
         'gtag-integration': 'true',
-        style: 'display:block;width:100%;max-width:375px;margin-inline:auto;',
+        style: 'display:block;width:100%;max-width:375px;margin-inline:auto;aspect-ratio:9/16;',
       },
     },
     sections: [
