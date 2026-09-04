@@ -9,8 +9,8 @@ defineProps<{ project: Project }>()
   <RouterLink :to="`/work/${project.slug}`" class="card">
     <div class="card__media">
       <img v-if="project.thumbnail" :src="project.thumbnail" :alt="`${project.title} screenshot`" loading="lazy" />
-      <div v-else class="card__placeholder" aria-hidden="true">
-        <span>{{ project.title }}</span>
+      <div v-else class="card__placeholder">
+        <span aria-hidden="true">{{ project.title }}</span>
         <small>NDA · no screenshots</small>
       </div>
     </div>
