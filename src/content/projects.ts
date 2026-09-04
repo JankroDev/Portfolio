@@ -1,13 +1,13 @@
 import type { Project } from './types'
-import storyBuilder from '../assets/projects/story-builder.png'
-import webframeGallery from '../assets/projects/webframe-gallery.png'
-import playerOpen from '../assets/projects/player-open.png'
-import napaLogin from '../assets/projects/napa-login.png'
-import napaInvoices from '../assets/projects/napa-invoices.png'
-import napaEntry from '../assets/projects/napa-entry.png'
-import aciTags1 from '../assets/projects/aci-tags-1.png'
-import aciTags2 from '../assets/projects/aci-tags-2.png'
-import aciTags3 from '../assets/projects/aci-tags-3.png'
+import storyBuilder from '../assets/projects/story-builder.webp'
+import webframeGallery from '../assets/projects/webframe-gallery.webp'
+import playerOpen from '../assets/projects/player-open.webp'
+import napaLogin from '../assets/projects/napa-login.webp'
+import napaInvoices from '../assets/projects/napa-invoices.webp'
+import napaEntry from '../assets/projects/napa-entry.webp'
+import aciTags1 from '../assets/projects/aci-tags-1.webp'
+import aciTags2 from '../assets/projects/aci-tags-2.webp'
+import aciTags3 from '../assets/projects/aci-tags-3.webp'
 
 export const projects: Project[] = [
   {
