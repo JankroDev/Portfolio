@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Chris Janke · Full Stack Developer</title>
+<style>
+  @page { size: Letter; margin: 0.55in 0.6in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    font-size: 10.2pt;
+    line-height: 1.38;
+    color: #1a1a1a;
+  }
+  h1, h2, h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
+  h1 { font-size: 24pt; letter-spacing: -0.01em; }
+  h2 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: 0.1em; color: #1f4e8c; border-bottom: 1px solid #c9d3e3; padding-bottom: 3px; margin: 13pt 0 7pt; font-family: "Segoe UI", Calibri, Arial, sans-serif; font-weight: 600; }
+  h3 { font-size: 11.5pt; font-family: "Segoe UI", Calibri, Arial, sans-serif; font-weight: 600; }
+  p { margin: 0; }
+  a { color: #1f4e8c; text-decoration: none; }
+  .header { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; }
+  .title { font-size: 12pt; color: #1f4e8c; margin-top: 2px; }
+  .contact { text-align: right; font-size: 9.4pt; color: #444; line-height: 1.5; }
+  .summary { margin-top: 6pt; }
+  .job { margin-bottom: 8pt; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .job-meta { font-size: 9.4pt; color: #555; white-space: nowrap; }
+  .job-sub { color: #444; font-size: 9.6pt; margin-bottom: 2pt; }
+  ul { margin: 2pt 0 0; padding-left: 16px; }
+  li { margin-bottom: 1.5pt; }
+  .compact { color: #444; font-size: 9.6pt; }
+  .skills { display: grid; grid-template-columns: 7.2em 1fr; row-gap: 3pt; column-gap: 8px; }
+  .skills dt { font-weight: 600; color: #333; }
+  .skills dd { margin: 0; color: #222; }
+  .footer { margin-top: 10pt; font-size: 8.8pt; color: #666; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div>
+    <h1>Chris Janke</h1>
+    <div class="title">Full Stack Developer</div>
+  </div>
+  <div class="contact">
+    Cambridge, OH 43725 · +1 614 307 2517<br />
+    <a href="mailto:jankrodev@gmail.com">jankrodev@gmail.com</a><br />
+    <a href="https://jankrodev.netlify.app/">jankrodev.netlify.app</a> ·
+    <a href="https://github.com/JankroDev">github.com/JankroDev</a> ·
+    <a href="https://www.linkedin.com/in/chris-janke-b58a76231/">LinkedIn</a>
+  </div>
+</header>
+
+<p class="summary">
+  Full stack developer with four years on StorySoft's healthcare marketing platform and seven years shipping software for paying customers. At StorySoft I build the Story Builder editor, the embeddable Webframe and Player custom elements, and the analytics that connect them, on a Vue 3, TypeScript, .NET/C#, MongoDB, and AWS stack. Before that I delivered custom line-of-business software for NAPA Auto Parts and ACI Services that is still in daily use.
+</p>
+
+<h2>Experience</h2>
+
+<div class="job">
+  <div class="job-head"><h3>Full Stack Developer, StorySoft LLC</h3><span class="job-meta">Apr 2022 – Present · Remote</span></div>
+  <div class="job-sub">Digital experience platform for pharma brands and their agencies (HCP and patient Stories, embeds, analytics)</div>
+  <ul>
+    <li>Build and maintain Story Builder, the drag-and-drop Vue editor agencies use to design responsive, MLR-compliant Stories; shipped the Lottie animation player component and the analytics integration that reports engagement from every Story.</li>
+    <li>Built the Webframe and Player as Vue 3 + TypeScript custom elements so clients embed Story galleries and playback on any site with one script tag, including visit tracking, campaign attribution, and Google Analytics integration.</li>
+    <li>Develop .NET/C# services and data access against MongoDB and MySQL, including performance work on backend query logic for client and agency sites.</li>
+    <li>Own CI/CD on AWS CodePipeline (and Bitbucket Pipelines previously) for platform deployments.</li>
+    <li>Triage and resolve bug tickets across the platform, reducing turnaround on customer-reported issues.</li>
+    <li>Train interns on platform SDKs and workflows, shortening onboarding.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><h3>Software Engineer, NAPA Auto Parts</h3><span class="job-meta">Jan 2022 – Feb 2022 · Cambridge, OH</span></div>
+  <ul>
+    <li>Built a customer invoice portal (React, Firebase Auth, Firestore) with a Python OCR pipeline (pytesseract) that extracts invoice number, date, and total from scans, cutting weekly invoicing for a major account to scan-and-upload and retaining the account.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><h3>Software Engineer (Contract), ACI Services</h3><span class="job-meta">Jan 2019 – Feb 2021 · Cambridge, OH</span></div>
+  <ul>
+    <li>Built an ASP.NET MVC / SQL Server OEM quoting site that aggregates cost, assembly, and margin data across databases; average quote time dropped from days to hours and the sales team quotes from one source of truth.</li>
+    <li>Built a browser-based tag printer tool (jQuery, JavaScript, Java, SQL) that lets shop techs lay out laser-etched compressor labels and save templates directly to the label database, removing the designer from the loop.</li>
+    <li>Owned all project code end to end, working with a senior developer and project stakeholders on requirements and revisions.</li>
+  </ul>
+</div>
+
+<div class="job compact">
+  <div class="job-head"><h3 style="font-size:10.5pt">Store Manager, NAPA Auto Parts</h3><span class="job-meta">Apr 2014 – Apr 2022 · Cambridge, OH</span></div>
+  <p>Ran daily operations for a retail and commercial parts store before moving into software full time.</p>
+</div>
+
+<h2>Skills</h2>
+<dl class="skills">
+  <dt>Frontend</dt><dd>Vue 3, TypeScript, JavaScript, React, HTML/CSS, Web Components, Lottie</dd>
+  <dt>Backend</dt><dd>.NET / C#, ASP.NET MVC, Node.js, REST APIs, Python</dd>
+  <dt>Data &amp; Cloud</dt><dd>MongoDB, MySQL, SQL Server, Firebase, AWS, AWS CodePipeline, Bitbucket Pipelines</dd>
+  <dt>Practices</dt><dd>Git, Agile, unit testing, analytics integration, SDK onboarding and intern training, MLR-compliant pharma tooling</dd>
+</dl>
+
+<p class="footer">Authorized to work in the US for any employer.</p>
+
+</body>
+</html>
