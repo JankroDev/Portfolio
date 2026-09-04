@@ -19,10 +19,12 @@ export function resetScriptCache() {
 // Reports success/failure via a synchronous callback (rather than a Promise)
 // so a caller's state update lands in the same tick as the DOM 'error'
 // event, ahead of Vue's microtask-scheduled render flush.
-function loadScript(kind: Kind, onError: () => void): void {
+// Returns an unsubscribe function the caller must invoke on unmount so the
+// listener (and the closure it holds) doesn't outlive the component.
+function loadScript(kind: Kind, onError: () => void): () => void {
   if (failedKinds[kind]) {
     onError()
-    return
+    return () => {}
   }
   let script = scripts[kind]
   if (!script) {
@@ -33,10 +35,12 @@ function loadScript(kind: Kind, onError: () => void): void {
     document.head.appendChild(script)
     scripts[kind] = script
   }
-  script.addEventListener('error', () => {
+  const handleError = () => {
     failedKinds[kind] = true
     onError()
-  })
+  }
+  script.addEventListener('error', handleError)
+  return () => script!.removeEventListener('error', handleError)
 }
 </script>
 
@@ -48,6 +52,7 @@ const props = defineProps<{ embed: ProjectEmbed; fallback?: ProjectImage }>()
 
 const failed = ref(false)
 let timer: ReturnType<typeof setTimeout> | undefined
+let unsubscribe: (() => void) | undefined
 
 onMounted(() => {
   const tag = `storysoft-${props.embed.kind}`
@@ -55,13 +60,14 @@ onMounted(() => {
     if (typeof customElements === 'undefined' || !customElements.get(tag)) failed.value = true
   }, UPGRADE_TIMEOUT_MS)
 
-  loadScript(props.embed.kind, () => {
+  unsubscribe = loadScript(props.embed.kind, () => {
     failed.value = true
   })
 })
 
 onBeforeUnmount(() => {
   if (timer) clearTimeout(timer)
+  if (unsubscribe) unsubscribe()
 })
 </script>
 

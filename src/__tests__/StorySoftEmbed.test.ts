@@ -50,4 +50,13 @@ describe('StorySoftEmbed', () => {
     await wrapper.vm.$nextTick()
     expect(wrapper.find('img').exists()).toBe(true)
   })
+
+  it('removes the script error listener on unmount', () => {
+    const embed = { kind: 'player' as const, attrs: { source: 'x' } }
+    const wrapper = mount(StorySoftEmbed, { props: { embed, fallback } })
+    const script = scriptFor('player')!
+    const removeSpy = vi.spyOn(script, 'removeEventListener')
+    wrapper.unmount()
+    expect(removeSpy).toHaveBeenCalledWith('error', expect.any(Function))
+  })
 })
