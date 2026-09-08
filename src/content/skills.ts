@@ -14,6 +14,16 @@ export const skillGroups: SkillGroup[] = [
     items: ['MongoDB', 'MySQL', 'SQL Server', 'Firebase', 'AWS', 'AWS CodePipeline', 'Bitbucket Pipelines'],
   },
   {
+    name: 'AI Tools',
+    items: [
+      'Claude / Claude Code',
+      'ChatGPT',
+      'GitHub Copilot',
+      'AI-assisted code generation',
+      'Prompt engineering',
+    ],
+  },
+  {
     name: 'Practices',
     items: ['Git', 'Agile', 'Unit testing', 'Analytics integration', 'SDK onboarding & intern training', 'MLR-compliant pharma tooling'],
   },

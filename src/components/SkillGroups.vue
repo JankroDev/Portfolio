@@ -25,6 +25,11 @@ import StackTags from './StackTags.vue'
   gap: var(--space-5);
 }
 
+/* An odd number of groups leaves the last card alone on its row; let it fill. */
+.group:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .group {
   padding: var(--space-5);
   background: var(--bg-elevated);

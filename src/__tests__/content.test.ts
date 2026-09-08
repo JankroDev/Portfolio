@@ -29,8 +29,8 @@ describe('experience', () => {
 })
 
 describe('skills', () => {
-  it('has four groups with between 4 and 8 items each', () => {
-    expect(skillGroups).toHaveLength(4)
+  it('has five groups with between 4 and 8 items each', () => {
+    expect(skillGroups).toHaveLength(5)
     for (const g of skillGroups) {
       expect(g.items.length).toBeGreaterThanOrEqual(4)
       expect(g.items.length).toBeLessThanOrEqual(8)
