@@ -5,7 +5,7 @@ export const experience: Experience[] = [
     company: 'Storysoft LLC',
     role: 'Full Stack Developer',
     start: 'Apr 2022',
-    end: 'Present',
+    end: 'Sep 2026',
     location: 'Remote',
     summary:
       'Story Builder editor features including the Lottie player component and analytics integration; Webframe and Player custom elements; .NET/C# services on MongoDB and MySQL; AWS CodePipeline and Bitbucket Pipelines; bug-ticket ownership and intern SDK training.',

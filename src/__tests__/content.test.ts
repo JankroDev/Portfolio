@@ -16,9 +16,9 @@ describe('profile', () => {
 })
 
 describe('experience', () => {
-  it('lists Storysoft first as current', () => {
+  it('lists Storysoft first, ended Sep 2026', () => {
     expect(experience[0].company).toBe('Storysoft LLC')
-    expect(experience[0].end).toBe('Present')
+    expect(experience[0].end).toBe('Sep 2026')
   })
 
   it('has exactly one compact entry (Store Manager)', () => {
