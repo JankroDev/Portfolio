@@ -8,8 +8,42 @@ import napaEntry from '../assets/projects/napa-entry.webp'
 import aciTags1 from '../assets/projects/aci-tags-1.webp'
 import aciTags2 from '../assets/projects/aci-tags-2.webp'
 import aciTags3 from '../assets/projects/aci-tags-3.webp'
+import rocksToRichesGemMine from '../assets/projects/rocks-to-riches-gem-mine.webp'
 
 export const projects: Project[] = [
+  {
+    slug: 'rocks-to-riches',
+    title: 'Rocks to Riches',
+    summary: 'Cozy 3D mining tycoon on Steam: from a pickaxe in the backyard to a jungle city and the asteroid belt.',
+    employer: 'JankroDev',
+    role: 'Solo Developer',
+    year: '2026',
+    stack: ['Godot 4', 'GDScript', 'Procedural 3D', 'Procedural Audio', 'Steam'],
+    thumbnail: rocksToRichesGemMine,
+    images: [{ src: rocksToRichesGemMine, alt: 'Rocks to Riches: the miner in a gem mine at depth 30, with gems scattered across the floor and the cash counter at $2.4m' }],
+    sections: [
+      {
+        heading: 'Problem',
+        paragraphs: [
+          'I wanted to ship a complete commercial game on my own: design, code, art, audio, and a store page, with no team and no asset budget.',
+        ],
+      },
+      {
+        heading: 'What I built',
+        paragraphs: [
+          'Rocks to Riches is a cozy incremental tycoon. You dig ore, haul it to trucks, and reinvest in a bigger operation, then sell everything to restart with a permanent bonus. It spans three areas, the Yard, the Lost City, and the Belt, with a hireable crew, contracts, a museum, drones, vehicles, a crane, and unlockable outfits and hats.',
+          'It is built in Godot 4 on the Forward+ renderer. The 3D models and music are generated in code rather than drawn or recorded, and the project is backed by an automated test suite. I wrote it with Claude as an AI pair programmer.',
+        ],
+      },
+      {
+        heading: 'Outcome',
+        paragraphs: [
+          'The game is listed on Steam under my own JankroDev label and heading into Early Access.',
+        ],
+      },
+    ],
+    links: [{ label: 'Steam store page', href: 'https://store.steampowered.com/app/5415360/Rocks_to_Riches/' }],
+  },
   {
     slug: 'story-builder',
     title: 'Story Builder',
