@@ -9,6 +9,10 @@ import aciTags1 from '../assets/projects/aci-tags-1.webp'
 import aciTags2 from '../assets/projects/aci-tags-2.webp'
 import aciTags3 from '../assets/projects/aci-tags-3.webp'
 import rocksToRichesGemMine from '../assets/projects/rocks-to-riches-gem-mine.webp'
+import aureliaCherryGrove from '../assets/projects/aurelia-cherry-grove.webp'
+import aureliaOcean from '../assets/projects/aurelia-ocean.webp'
+import aureliaNetherPortal from '../assets/projects/aurelia-nether-portal.webp'
+import aureliaFireflies from '../assets/projects/aurelia-fireflies.webp'
 
 export const projects: Project[] = [
   {
@@ -43,6 +47,44 @@ export const projects: Project[] = [
       },
     ],
     links: [{ label: 'Steam store page', href: 'https://store.steampowered.com/app/5415360/Rocks_to_Riches/' }],
+  },
+  {
+    slug: 'aurelia-shaders',
+    title: 'Aurelia Shaders',
+    summary: 'Warm, cinematic Minecraft shader pack with soft shadows, volumetric clouds, and per-biome atmosphere, with over 10,000 downloads.',
+    employer: 'JankroDev',
+    role: 'Solo Developer',
+    year: '2026',
+    stack: ['GLSL', 'Iris', 'OptiFine', 'labPBR'],
+    thumbnail: aureliaCherryGrove,
+    images: [
+      { src: aureliaCherryGrove, alt: 'Aurelia Shaders: a cherry grove at golden hour, with sunlight through pink canopies and petals drifting over the grass' },
+      { src: aureliaOcean, alt: 'Aurelia Shaders: an open ocean with rippling waves and sun reflections under soft clouds' },
+      { src: aureliaNetherPortal, alt: 'Aurelia Shaders: a nether portal at night casting purple light across wet ground and grass' },
+      { src: aureliaFireflies, alt: 'Aurelia Shaders: a forest at night with fireflies drifting between the trees below snowy mountains' },
+    ],
+    sections: [
+      {
+        heading: 'Problem',
+        paragraphs: [
+          'I wanted a shader pack for Minecraft that feels like golden hour all the time: soft light, long shadows, and a warm, cinematic look, while still running on a range of hardware.',
+        ],
+      },
+      {
+        heading: 'What I built',
+        paragraphs: [
+          'Aurelia is a GLSL shader pack for Iris and OptiFine. It has soft PCSS shadows that pick up color through stained glass, one-bounce global illumination with ambient occlusion, and light spill from torches, glowstone, lava, and portals. The sky gets volumetric clouds, god rays, and morning ground fog, and water gets waves, screen-space reflections, caustics, and regional colors.',
+          'It supports labPBR resource packs and adds built-in PBR for vanilla blocks, including glowing ore veins. Each biome has its own tint and particles, such as fireflies, falling petals, spores, and blowing sand. Post-processing covers filmic tonemapping, auto-exposure, bloom, and TAA, and four performance profiles let players trade quality for frame rate.',
+        ],
+      },
+      {
+        heading: 'Outcome',
+        paragraphs: [
+          'Aurelia is published on CurseForge and has passed 10,000 downloads in its first two months.',
+        ],
+      },
+    ],
+    links: [{ label: 'CurseForge page', href: 'https://www.curseforge.com/minecraft/shaders/aurelia-shaders' }],
   },
   {
     slug: 'story-builder',

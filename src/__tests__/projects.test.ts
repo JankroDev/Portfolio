@@ -2,9 +2,10 @@ import { describe, it, expect } from 'vitest'
 import { projects, getProject, getAdjacent } from '../content/projects'
 
 describe('projects', () => {
-  it('has seven projects in the agreed order', () => {
+  it('has eight projects in the agreed order', () => {
     expect(projects.map((p) => p.slug)).toEqual([
       'rocks-to-riches',
+      'aurelia-shaders',
       'story-builder',
       'webframe',
       'player',
@@ -42,7 +43,8 @@ describe('projects', () => {
 
   it('getAdjacent wraps around', () => {
     expect(getAdjacent('rocks-to-riches')?.prev.slug).toBe('aci-oem-quoting')
-    expect(getAdjacent('rocks-to-riches')?.next.slug).toBe('story-builder')
+    expect(getAdjacent('rocks-to-riches')?.next.slug).toBe('aurelia-shaders')
+    expect(getAdjacent('aurelia-shaders')?.next.slug).toBe('story-builder')
     expect(getAdjacent('story-builder')?.next.slug).toBe('webframe')
     expect(getAdjacent('aci-oem-quoting')?.next.slug).toBe('rocks-to-riches')
     expect(getAdjacent('nope')).toBeUndefined()

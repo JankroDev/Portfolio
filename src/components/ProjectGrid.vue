@@ -7,7 +7,7 @@ import ProjectCard from './ProjectCard.vue'
   <section id="work" class="section">
     <div class="container">
       <p class="eyebrow">Selected work</p>
-      <h2 class="section-title">Seven projects, from client work to my own game.</h2>
+      <h2 class="section-title">Eight projects, from client work to my own game and shader pack.</h2>
       <div class="grid">
         <ProjectCard v-for="p in projects" :key="p.slug" :project="p" />
       </div>
